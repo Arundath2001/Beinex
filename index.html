@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Libre+Baskerville&family=Oswald&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+    <div class="header1"> 
+        <div class="header1__left">
+          <ul>
+            <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+              <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+            </svg></a></li>
+            <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+            </svg></a></li>
+            <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+              <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+            </svg></a></li>
+            <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+            </svg></a></li>
+            <li><img src=".//assets/images/circle.png" alt="circleimage"></li>
+            <li><a href="/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-translate" viewBox="0 0 16 16">
+              <path d="M4.545 6.714 4.11 8H3l1.862-5h1.284L8 8H6.833l-.435-1.286H4.545zm1.634-.736L5.5 3.956h-.049l-.679 2.022H6.18z"/>
+              <path d="M0 2a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v3h3a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2v-3H2a2 2 0 0 1-2-2V2zm2-1a1 1 0 0 0-1 1v7a1 1 0 0 0 1 1h7a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H2zm7.138 9.995c.193.301.402.583.63.846-.748.575-1.673 1.001-2.768 1.292.178.217.451.635.555.867 1.125-.359 2.08-.844 2.886-1.494.777.665 1.739 1.165 2.93 1.472.133-.254.414-.673.629-.89-1.125-.253-2.057-.694-2.82-1.284.681-.747 1.222-1.651 1.621-2.757H14V8h-3v1.047h.765c-.318.844-.74 1.546-1.272 2.13a6.066 6.066 0 0 1-.415-.492 1.988 1.988 0 0 1-.94.31z"/>
+            </svg></a></li>
+            <li><a href="/">English</a></li>
+          </ul>
+        </div>    
+        <div class="header1__right">
+          <ul>
+            <li><img src=".//assets/images/circle2.png" alt="bluecircle"><a href="/">Tableau Free Trial</a></li>
+            <li><img src=".//assets/images/circle2.png" alt="bluecircle"><a href="/">Alteryx Free Trial</a></li>
+            <li><img src=".//assets/images/circle2.png" alt="bluecircle"><a href="/">Auraa Free Trial</a></li>
+            <img src=".//assets/images/call.png" alt="call"><a class="header1__link" href="/">Schedule a call</a>
+        </ul>
+        </div>
+  </div>
+  <div class="header2 container">
+    <div class="header2__left">
+      <a href="/">
+        <span><img src=".//assets/images/logo.png" alt="logo"></span>
+      </a>
+    </div>
+    <div class="header2__right">
+      <ul class="header2__list">
+        <li class="nav-item"><a href="#" >Services</a></li>
+        <li class="nav-item"><a href="#" >Partners</a></li>
+        <li class="nav-item"><a href="#" >Industries</a></li>
+        <li class="nav-item"><a href="#" >Company</a></li>
+        <li class="nav-item"><a href="#" >Events</a></li>
+        <li class="nav-item"><a href="#" >Careers</a></li>
+        <li class="nav-item"><a href="#" >Resources</a></li>
+        <li class="nav-item"><a href="#" >Training</a></li>
+        <li class="nav-item"><a href="#" >Contact us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="banner__cont">
+    <h2>Our Vission</h2>
+    <P>The best thing about Beinex Academy’s training programme is that it absorbs the trainees who complete the programme based on their performance. Our Subject Matter Experts with their well-crafted curriculum, mentor the perspectives of the trainees and enhance their performance during the tenure, which results in high-caliber functioning. Applying newly gained knowledge and skills in a work-environment can tap into one’s full potential. We have successfully put this position into practice with spectacular results.</P>
+    </div>
+    </div>
+    <div class="tbanner">
+        <div class="heading1">
+            <div class="headwithline">
+                <h2>Beinex Academy</h2>
+            </div>
+            <div class="heading1__title">
+                <h2>Training & Absorption Program</h2>
+            </div>
+        </div>
+        <div class="training">
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon1.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Review</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon2.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Short Listing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon3.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Verification</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon4.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>HR Interview</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon5.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Training</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/ticon5.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Review</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tristique aliquet urna.</p>
+                </div>
+            </div>
+    
+        </div>
+    </div> 
+    
+    <!-- banner2 -->
+
+    <div class="banner2org">
+        <div class="banner2">
+            <div class="banner2cont">
+                <div class="head1">
+                    <h2>A Great Place to Work is a Great Place to Get Trained!</h2>
+                    <p>Beinex, excellent on all the following counts:</p>
+                </div>
+                
+                <div class="groupicon1">
+                    <div class="groupicon1__cont">
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon1.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Trust Index</h3>
+                        </div>
+                    </div>
+                    
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon2.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Trust Index© feedback credibility of management</h3>
+                        </div>
+                    </div>
+            
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon3.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Respect for people</h3>
+                        </div>
+                    </div>
+            
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon4.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Fairness at the workplace</h3>
+                        </div>
+                    </div>
+            
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon5.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Pride</h3>
+                        </div>
+                    </div>
+            
+                    <div class="icontext1">
+                        <div class="icontext1__img">
+                            <img src=".//assets/images/gicon6.png" alt="gicon1">
+                        </div>
+                        <div class="icontext1__text1">
+                            <h3>Camaraderie between people</h3>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="banner2__img">
+                <img src=".//assets/images/banner2-1.png">
+            </div>
+        </div>
+    </div>   
+
+    <div class="heading2">
+        <h2>Employee testimonial </h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+    </div>
+
+</div>
+<div class="testimonial">
+  <div class="testimonial__twobtn">
+    <a href=""> < </a>
+    <a href="">></a>
+  </div>
+    
+    <div class="smalltest">
+
+        <img src=".//assets/images/testicon1.png" alt="person1" class="smalltest__img1">
+    <div class="smalltest__cont">
+        <img src=".//assets/images/testcomma.png" alt="comma" class="smalltest__img2">
+        <h3>Vismaya Balakrishnan</h3>
+        <p>As a fresher, Beinex is the only company that provided me with a training & absorption opportunity. What I love here is the ... </p>
+        <a href="/" >Read More   <i class="smalltest__arrow"></i></a>
+    </div>
+</div>
+<div class="smalltest">
+
+    <img src=".//assets/images/testicon2.png" alt="person1" class="smalltest__img1">
+    <div class="smalltest__cont">
+        <img src=".//assets/images/testcomma.png" alt="comma" class="smalltest__img2">
+    <h3>Devika Jyothy</h3>
+    <p>First of all, as a fresher, this is the most incredible opportunity I can ever get. Three months of internship and getting a job in the ...</p>
+    <a href="/" >Read More   <i class="smalltest__arrow"></i></a>
+</div>
+</div>
+<div class="smalltest">
+
+    <img src=".//assets/images/testicon3.png" alt="person1" class="smalltest__img1">
+    <div class="smalltest__cont">
+    <img src=".//assets/images/testcomma.png" alt="comma" class="smalltest__img2">
+<h3>Azaz Ahmed Khan</h3>
+<p>When I started my training program at Beinex last year, I always dreamed about working here as a permanent employee because, during the...</p>
+<a href="/" >Read More   <i class="smalltest__arrow"></i></a>
+</div>
+</div>
+</div>
+
+<div class="b4main">
+
+    <div class="banner3">
+        <div class="heading3">
+            <h4>At adipiscing ante auctor.</h4>
+            <div class="headwithline headwithline--newhead">
+                <h2>Benefits</h2>
+            </div>
+        </div>
+    </div> 
+
+    <div class="banner3cont">
+        <div class="Smallcont ">
+            <div class="Smallcont__title Smallcont--nodash__title">
+                <div class="Smallcont__img"><img src=".//assets/images/b3icon1.png" alt=""></div>
+            </div>
+            <div class="Smallcont__cont">
+                <h3>Quick Results</h3>
+                <p>The more the trainee learns, the better their work performance and less time are taken to finish tasks. With consistent training support and continual practice provided by Beinex, you will immediately start showing performance improvement.
+                </p>
+            </div>
+        </div>
+        <div class="Smallcont">
+            <div class="Smallcont__title Smallcont--nodash__title">
+                <div class="Smallcont__img"><img src=".//assets/images/b3icon2.png" alt=""></div>
+            </div>
+            <div class="Smallcont__cont">
+                <h3>Exposure to live projects</h3>
+                <p>Opportunities for hands-on experience on projects headed by veterans give an incomparable exposure a professional can ever get. Keeping international standards, we have planned the syllabus to fine-tune all the trainees for different positions.</p>
+            </div>
+        </div>
+        <div class="Smallcont">
+            <div class="Smallcont__title Smallcont--nodash__title">
+                <div class="Smallcont__img"><img src=".///assets/images/b3icon3.png" alt=""></div>
+            </div>
+            <div class="Smallcont__cont">
+                <h3>Rapid Placements</h3>
+                <p>A plethora of opportunities awaits you after completing Beinex’s training programme. The training programmes of Beinex equip the trainees to think on their feet to find out-of-the-box solutions to out-of-the-box problems and lead to better placements.</p>
+            </div>
+        </div>
+        <div class="Smallcont">
+            <div class="Smallcont__title Smallcont--nodash__title">
+                <div class="Smallcont__img"><img src=".//assets/images/b3icon4.png" alt=""></div>
+            </div>
+            <div class="Smallcont__cont">
+                <h3>Premium training for free</h3>
+                <p>A perfectly curated syllabus prepared by our subject matter experts and consultants helps the trainees to learn, develop, and advance throughout their careers. The certification provided by Beinex is a ticket to lifelong career opportunities. </p>
+            </div>
+        </div> 
+    </div>
+
+    <div class="banner4">
+        <div class="heading3 heading3--new3">
+            <h4>At adipiscing ante auctor.</h4>
+            <div class="headwithline headwithline--newhead2">
+                <h2>Course value</h2>
+            </div>
+        </div>
+    
+        <div class="banner4__cont">
+            
+            <div class="banner4__main">
+            <div class="banner4__cont1">
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img">
+                    <img src=".//assets/images/b4icon1.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Lucrative Career in Beinex​</h3>
+                </div>
+            </div>
+    
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img ">
+                    <img src=".//assets/images/b4icon2.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Professional Growth​</h3>
+                </div>
+            </div>
+    
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img">
+                    <img src=".//assets/images/b3icon3.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Outstanding Mentoring</h3>
+                </div>
+            </div>
+        </div>
+        <div class="banner4__cont2">
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img">
+                    <img src=".//assets/images/b4icon4.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Be Exceptional in your Domain​</h3>
+                </div>
+            </div>
+    
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img">
+                    <img src=".//assets/images/b4icon5.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Valid Certification​</h3>
+                </div>
+            </div>
+    
+            <div class="icontext1 icontext1--text2">
+                <div class="icontext1__img">
+                    <img src=".//assets/images/b4icon6.png" alt="gicon1">
+                </div>
+                <div class="icontext1__text1">
+                    <h3>Learn at a Great Place to Work-Certified Company</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="banner4__img">
+            <img src=".//assets/images/b4image.png" alt="pic">
+        </div>
+    
+</div>
+
+<div class="banner5">
+    <div class="banner5__top">
+    <div class="head1 head1--title">
+        <h2>WHERE WE NEED YOU?</h2>
+        <p>Intakes on In:</p>
+    </div>
+    <p class="banner5__para1">Beinex Digital Product Suite, a collection of AI and ML driven applications customized to suit your business needs scale down the effort of individually tracking the bunch of unstructured data by converting it to reports using NLP techniques.</p>
+    </div>
+
+    <div class="banner5__main">
+        <div class="banner5__left">
+            <img src=".//assets/images/b5image.png" alt="person">
+        </div>
+        <div class="banner5__right">
+            <div class="banner5__right1">
+                <div class="b5data1">
+                    <div class="b5data1__top">
+                    <div class="headline">
+                        <h3>Data Engineering </h3>
+                    </div>
+                        <div class="b5data1__img">
+                        <img src=".//assets/images/b5icon1.png">
+                    </div>
+                    </div>
+                    <p class="b5data1__para1">Beinex Digital Product Suite, a collection of AI and ML driven applications customized to suit your business needs scale down the effort of individually tracking the bunch of unstructured data by converting it to reports using NLP techniques.</p>    
+            
+                    <div class="b5data1__bot">
+                        <div class="linecont">
+                            <h3 class="linecont__head1">Last date of Submission</h3>
+                            <h3>March 24, 2023</h3>
+                        </div>
+                        <div class="linecont">
+                            <h3 class="linecont__head1">Last date of Submission</h3>
+                            <h3>March 24, 2023</h3>
+                        </div>
+                        <div class="button">
+                            <a href="#">Apply Now <img src=".//assets/images/engicon1.png" alt="icon"></a>
+                        </div>
+                        
+                    </div>
+                </div>    
+            </div>
+            <div class="banner5__right2">
+                <div class="b5data2">
+                    <div class="b5data2__cont">
+                    <div class="headline">
+                        <h3>Data Engineering </h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                </div>   
+                    <div class="b5data2__img">
+                        <img src=".//assets/images/b5icon2.png">
+                    </div>
+                    
+                </div>
+
+                <div class="b5data2">
+                    <div class="b5data2__cont">
+                    <div class="headline">
+                        <h3>Data Engineering </h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                </div>   
+                    <div class="b5data2__img">
+                        <img src=".//assets/images/b5icon2.png">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="banner5__right3">
+                <div class="b5data2">
+                    <div class="b5data2__cont">
+                    <div class="headline">
+                        <h3>Data Engineering </h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                </div>   
+                    <div class="b5data2__img">
+                        <img src=".//assets/images/b5icon2.png">
+                    </div>
+                    
+                </div>
+
+                <div class="b5data2">
+                    <div class="b5data2__cont">
+                    <div class="headline">
+                        <h3>Data Engineering </h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                    <div class="linecont">
+                        <h3 class="linecont__head1">Last date of Submission</h3>
+                        <h3>March 24, 2023</h3>
+                    </div>
+                </div>   
+                    <div class="b5data2__img">
+                        <img src=".//assets/images/b5icon2.png">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+
+
+</div>
+
+<div class="form">
+        
+    <h3>Request A Demo</h3>
+    <div class="form__newcont">
+    <div class="form__tot">
+    <div class="form__main">
+        <div class="form__left">
+    <form>
+        <div class="input">
+            <input type="text" placeholder="Name" class="input__1">
+            <img src=".//assets/images/formicon1.png">
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Select Country" class="input__1">
+            <img src=".//assets/images/formicon2.png">
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Company" class="input__1">
+            <img src=".//assets/images/formicon3.png">
+        </div>
+    </form>
+    </div>
+        <div class="form__right">
+    <form>
+        <div class="input">
+            <input type="text" placeholder="Email" class="input__1">
+            <img src=".//assets/images/formicon4.png">
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Phone Number" class="input__1">
+            <img src=".//assets/images/formicon5.png">
+        </div>
+
+        <div class="input">
+            <input type="text" placeholder="Job Role" class="input__1">
+            <img src=".//assets/images/formicon6.png">
+        </div>
+    </form>
+</div>
+
+</div>
+<div class="form__txtarea">
+<input type="text" placeholder="Message">
+<img src=".//assets/images/formicon7.png">
+</div>
+</div>
+<div class="form__cont">
+    <h3>What Will Be The Next Step?</h3>
+    <p>One of our executives will get in touch with you to gather your requirement.</p>
+
+       <p> We will analyse the requirement and schedule a virtual demo.</p>
+        
+        <p>Demo is done adhering to all the requisite parameters.</p>
+</div>
+</div>
+
+</div>
+
+<div class="bannerlast">
+
+    <div class="b6data1">
+        <div class="banner3cont banner3cont--new">
+            <div class="Smallcont ">
+                <div class="Smallcont__title Smallcont--nodash__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/b6icon1.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Beinex – UAE</h3>
+                    <p>506, BB01, Bay Square,
+                        Business Bay,
+                        P. O. Box 82940,
+                        Dubai, United Arab Emirates Phone: +971 4 243 9494
+                        Mobile: +971 52 695 0068
+                        Email: Info@beinex.com
+                    </p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title Smallcont--nodash__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/b6icon2.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Beinex - Qatar</h3>
+                    <p>Global Business Centre II,
+                        Office No. R19, 2nd floor Al Hitmi Village, Building No 40, Cornish Road, Doha, Qatar
+                        P.O Box 25422
+                        Office: +974 44023981
+                        Phone: +974 50682589
+                        Email: info@beinex.qa</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title Smallcont--nodash__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/b6icon3.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Beinex – United Kingdom</h3>
+                    <p>New Broad Street House
+                        35 New Broad St
+                        London England EC2M 1NH
+                        Phone: +44 7539 393552
+                        Email: UK@beinex.com</p>
+                </div>
+            </div>
+            <div class="Smallcont">
+                <div class="Smallcont__title Smallcont--nodash__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/b6icon4.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Beinex – India (Kochi)</h3>
+                    <p>#19, Ground Level
+                        Infopark TBC, JNI Stadium
+                        Kaloor, Kochi
+                        Kerala 682017, India
+                        Office: +91 484 4855800
+                        Mobile: +91 920 7204499
+                        Mobile: +91 952 6451099
+                        Email: Info@beinex.com</p>
+                </div>
+            </div> 
+            <div class="Smallcont">
+                <div class="Smallcont__title Smallcont--nodash__title">
+                    <div class="Smallcont__img"><img src=".//assets/images/b6icon5.png" alt=""></div>
+                </div>
+                <div class="Smallcont__cont">
+                    <h3>Beinex – Kenya</h3>
+                    <p>Beinex Consulting Ltd
+                        Purshottam Place, 7th floor, Westlands Rd, Museum Hill P. O. Box 66217-00800, Nairobi, Kenya.
+                        Phone: +254 020 515 4016
+                        Email: Info@beinex.com</p>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div class="newsletter">
+        <div class="head1 head1__title2">
+            <h2>Subscribe to our newsletter</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae ac facilisis.</p>
+        </div>
+        <div class="newsletter__cont">
+            <div class="input2">
+                <input type="text" placeholder="Your email address" class="input__1">
+                <button><img src=".//assets/images/nicon1.png"></button>
+        </div>   
+        </div>
+    </div>
+
+    <div class="footer1">
+        <div class="footer1__sec1 footer1__pad">
+            <img src=".//assets/images/logo.png" alt="logo">
+            <div class="footer1__sec1cont">
+                <ul>
+                <li><a href="">about beinex</a></li>
+                <li><a href="">careers</a></li>
+                <li><a href="">Press Releases</a></li>
+                <li><a href="">Beinex in the News</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="footer1__sec2 footer1__pad">
+            <h2>Our Services</h2>
+            <ul>
+            
+            <li><a href="">Advanced Analytics</a></li>
+            <li><a href="">AI /ML/RPA</a></li>
+            <li><a href="">Audit Analytics</a></li>
+            <li><a href="">Beinex Digital</a></li>
+            <li><a href="">Business Intelligence</a></li>
+            <li><a href="">Competitive Intelligence</a></li>
+            <li><a href="">Modern Cloud Analytics</a></li>
+            <li><a href="">Risk Analytics</a></li>
+            <li><a href="">Tableau</a></li>
+            <li><a href="">Tableau Support Services</a></li>
+            
+        </ul>
+
+            
+        </div>
+
+        <div class="footer1__sec3 footer1__pad">
+            <h2>Our Industries</h2>
+            <ul>
+                <li><a href="">Finance</a></li>
+                <li><a href="">Human Resources</a></li>
+                <li><a href="">Procurement</a></li>
+                <li><a href="">Sales</a></li>
+
+            </ul>
+            
+        </div>
+
+        <div class="footer1__sec4 footer1__pad">
+            <h2>Our Partners</h2>
+            <ul>
+                <li><a href="">Tableau</a></li>
+                <li><a href="">Alteryx</a></li>
+                <li><a href="">AURAA</a></li>
+                <li><a href="">Amazon Web Services</a></li>
+                <li><a href="">Microsoft Azure</a></li>
+                <li><a href="">Snowflake</a></li>
+                <li><a href="">Salesforce</a></li>
+                <li><a href="">Alation</a></li>
+            </ul>
+            
+        </div>
+    </div>
+
+
+    <div class="footer2">
+        <footer class="footer2__main">
+            <ul class="footer2__newul">
+              <li><a href="#" class="footer2__li1">privacy policy</a></li>
+              <li ><a href="#" class="footer2__li2">terms of use</a></li>
+              <li ><a href="#" class="">cookie policy</a></li>
+            </ul>
+
+            <ul class="footer2__newul1">
+                <li><a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                    <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                  </svg></a></li>
+                <li ><a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                  </svg></a></li>
+                <li ><a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                  </svg></a></li>
+                  <li ><a href="#" class=""><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                  </svg></a></li>
+              </ul>
+            <p class="">Copyright © 2022 - 23 Beinex</p>
+          </footer>
+    </div>
+
+</div>
+
+</div>
+</body>
+</html>

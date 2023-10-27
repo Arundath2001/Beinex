@@ -1,0 +1,105 @@
+.footer1{
+    background: linear-gradient(72deg, #23133F 9.81%, #08205C 50.72%, #01326A 93.38%);
+    display: flex;
+    flex-direction: row;
+        justify-content: space-between;
+        padding:430px 30px 30px 30px;
+    li{
+        
+        padding-top: 10px;
+        
+    }
+    ul{
+        list-style: none;
+    }
+    h2{
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+    &__sec2, &__sec4{
+        column-count: 2;
+    }
+    &__pad{
+     padding-top: 20px;   
+    }
+    a{
+        text-decoration: none;
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+    }
+
+    &__sec1::after{
+        content: "";
+        border: 1px solid #fff;
+        height: 176px;
+        position: absolute;
+        top: 445px;
+        left: 247px;
+        opacity: 0.2;
+    }
+    &__sec2::after{
+        content: "";
+        border: 1px solid #fff;
+        height: 176px;
+        position: absolute;
+        top: 445px;
+        left: 753px;
+        opacity: 0.2;
+    }
+    &__sec3::after{
+        content: "";
+        border: 1px solid #fff;
+        height: 176px;
+        position: absolute;
+        top: 445px;
+        left: 1093px;
+        opacity: 0.2;
+    }
+
+    
+}
+
+@include mobile{
+    .footer1{
+        flex-direction: column;
+        padding: 30px;
+        &__sec1::after{
+            display: none;
+        }
+        &__sec2::after{
+            content: "";
+           display: none;
+        }
+        &__sec3::after{
+            content: "";
+            display: none;
+        }
+    
+    }
+}
+
+@include tablet{
+    .footer1{
+        flex-direction: column;
+        padding: 30px;
+
+        &__sec1::after{
+            display: none;
+        }
+        &__sec2::after{
+            content: "";
+           display: none;
+        }
+        &__sec3::after{
+            content: "";
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.b5data1{
+    background-color: #03549F;
+    padding: 30px;
+    font-size: 14px;
+    &__para1{
+    color: #FFF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-top: 10px;
+
+    }
+    &__top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    &__head{
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    // background-color: rgb(80, 200, 53);
+    h3{
+        position: relative;
+        left: 17px;
+    }
+    h3::before{
+        content: "" ;
+        border: 3px solid #04BBF2;
+        display: block;
+        height: 30px;
+        position: absolute;
+        left: -17px;
+    }
+    }
+    &__img{
+        position: relative;
+        right: 0;
+        top: 10px;
+    }
+    &__bot{
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        justify-content: space-between;
+    }
+    
+}

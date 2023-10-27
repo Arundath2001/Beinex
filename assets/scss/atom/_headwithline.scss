@@ -1,0 +1,85 @@
+.headwithline{
+    h2{
+        position: relative;
+    }
+    font-family: 'Poppins';
+    color: #10385B;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2.52px;
+    h2::after{
+        content: "";
+        position: absolute;
+        border: 1px solid #10385B;
+        width: 272px;
+        top: 50%;
+        left: 216px;
+    }
+    &--newhead{
+        font-size: 28px;
+        color: #fff;
+        text-transform: capitalize;
+        h2::after{
+            content: "";
+            border: 1px solid #fff;
+            width: 272px;
+            top: 50%;
+            left: 216px;
+            
+        }
+    }
+    &--newhead2{
+        font-size: 28px;
+        h2::after{
+            content: "";
+            border: 1px solid #10385B;
+            top: 50%;
+            left: 250px;
+            width: 54px;
+            
+        }
+    }
+}
+
+
+@include mobile {
+    .headwithline{
+        padding-left: 30px;
+        h2::after{
+            width: 70px;
+        }
+    &--newhead2{
+        font-size: 18px;
+        h2::after{
+            content: "";
+            border: 1px solid #10385B;
+            top: 50%;
+            left: 155px;
+            
+        }
+
+    }
+
+    }
+}
+
+@include tablet{
+    .headwithline{
+        padding-left: 30px;
+        h2::after{
+            width: 70px;
+        }
+        &--newhead2{
+            font-size: 18px;
+            h2::after{
+                content: "";
+                border: 1px solid #10385B;
+                top: 50%;
+                left: 240px;
+                
+            }
+    
+        }
+
+    }
+}

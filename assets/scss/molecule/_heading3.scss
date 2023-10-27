@@ -1,0 +1,24 @@
+.heading3{
+    padding: 30px;
+    font-size: 14px;
+    color: #fff;
+    letter-spacing: 2.52px;
+    &--new3{
+        color: #10385B;
+    }
+}
+@include mobile{
+    .heading3{
+        h4{
+            padding-left: 30px;
+        }    
+    }
+}
+
+@include tablet{
+    .heading3{
+        h4{
+            padding-left: 30px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+.testimonial{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 51px;
+    &__twobtn{
+        display: flex;
+        position: absolute;
+        right: 50px;
+        a{
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            background-color: #10385B;
+            margin-left: 20px;
+            height: 24px;
+
+           
+        }
+    }
+    
+}
+
+@include mobile{
+    .testimonial{
+        flex-direction: column;
+    }
+}
+
+@include tablet{
+    .testimonial{
+        flex-direction: column;
+    }
+}

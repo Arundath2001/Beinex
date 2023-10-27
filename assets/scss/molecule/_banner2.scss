@@ -1,0 +1,46 @@
+.banner2{
+    background-image: url(..//../images/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    height: 413px;
+    width: 100%;
+    &__img{
+        img{
+            width: 570px;
+            height: 386px;
+            padding: 25px;
+        }
+       
+    }
+}
+@include mobile{
+    .banner2{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        &__img{
+            img{
+            width: 300px;
+            height: 200px;
+            margin: 0;
+        }
+        }
+    }
+    
+}
+@include tablet{
+    .banner2{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        &__img{
+            img{
+            width: 300px;
+            height: 200px;
+        }
+        }
+    }
+}

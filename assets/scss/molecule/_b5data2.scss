@@ -1,0 +1,33 @@
+.b5data2{
+    background-color: #03549F;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px;
+    font-size: 14px;
+    &__img{
+        position: relative;
+        top: 50px;
+    }
+}
+@include mobile{
+    .b5data2{
+        justify-content: space-around;
+        &__img{
+            img{
+            position: relative;
+            width: 20px;
+            height: 20px;
+            top: -45px;
+            }
+            
+        }
+    }
+}
+
+@include tablet{
+    .b5data2{
+        justify-content: space-around;
+    }
+}

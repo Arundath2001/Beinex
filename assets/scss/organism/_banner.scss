@@ -1,0 +1,60 @@
+.banner{
+    background-image: url(..//../images/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+    width: 100%;
+    &__cont{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: 'Poppins';
+        color: #ffffff;
+        position: absolute;
+        padding: 50px;
+    h2{
+        font-size: 38px;
+        line-height: 52px;
+    }
+    p{
+        font-size: 14px;
+        width: 769px;
+        padding-top: 23px;
+    }
+    }
+}
+@include mobile{
+    .banner{
+        padding-bottom: 0;
+        height: 100%;
+        &__cont{
+            position: relative;
+            padding: 30px;
+            p{
+                width: 100%;
+                padding-top: 10px;
+            }
+            h2{
+                list-style: none;
+            }
+        }
+    }
+}
+@include tablet{
+    .banner{
+        padding-bottom: 0;
+        height: 100%;
+        &__cont{
+            position: relative;
+            padding: 40px;
+            p{
+                width: 100%;
+                padding-top: 10px;
+            }
+            h2{
+                list-style: none;
+            }
+        }
+    }
+}

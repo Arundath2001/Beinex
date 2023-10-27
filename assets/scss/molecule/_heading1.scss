@@ -1,0 +1,17 @@
+.heading1{
+    font-family: 'Poppins';
+    color: #10385B;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 28px;
+}
+@include mobile{
+    .heading1{
+        font-size: 14px;
+    }
+}
+@include tablet{
+    .heading1{
+        font-size: 18px;
+    }
+}

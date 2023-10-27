@@ -1,0 +1,8 @@
+.banner2org{
+    font-size: 7px;
+}
+@include tablet{
+    .banner2org{
+        width: 100%;
+    }
+}

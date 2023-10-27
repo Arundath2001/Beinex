@@ -1,0 +1,27 @@
+.training{
+    display: flex;
+    gap: 56px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 65px;
+    img:hover{
+        transition: .7s;
+        transform: scale(1.2);
+
+    }
+}
+@include mobile{
+    .training{
+        flex-direction: column;
+        margin-inline: 20px;
+        gap: 30px;
+    }
+}
+
+@include tablet{
+    .training{
+        flex-direction: column;
+        margin-inline: 20px;
+        gap: 30px;
+    }
+}

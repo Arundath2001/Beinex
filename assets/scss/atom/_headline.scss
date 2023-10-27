@@ -1,0 +1,26 @@
+.headline{
+    color: #FFF;
+    
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 7px;
+    h3{
+        position: relative;
+        left: 17px;
+        font-size: 18px;
+    }
+    h3::before{
+        content: "" ;
+        border: 3px solid #04BBF2;
+        display: block;
+        height: 30px;
+        position: absolute;
+        left: -17px;
+        
+        
+        
+        
+        
+    }
+}

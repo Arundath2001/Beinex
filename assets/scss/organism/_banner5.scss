@@ -1,0 +1,72 @@
+.banner5{
+    background-color: #071D31;
+    padding: 50px 50px 58px 51px;
+    &__top{
+        display: flex;
+        flex-direction: row;
+    }
+    &__para1{
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        opacity: 0.5;
+    }
+    &__main{
+        display: flex;
+        flex-direction: row;
+        padding-top: 43px;
+        gap: 30px;
+    }
+    &__right{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__right2, &__right3{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+
+@include mobile{
+    .banner5{
+        padding: 10px;
+        &__main{
+            align-items: center;
+        }
+        align-items: center;
+        &__top{
+            flex-direction: column;
+        }
+        &__main{
+            flex-direction: column-reverse;
+        }
+
+    }
+}
+
+
+
+@include tablet{
+    .banner5{
+        padding: 10px;
+        &__main{
+            align-items: center;
+        }
+        &__top{
+            flex-direction: column;
+        }
+        &__main{
+            flex-direction: column-reverse;
+        }
+        &__left{
+            img{
+                height: 245px;
+            }
+        }
+    }
+}

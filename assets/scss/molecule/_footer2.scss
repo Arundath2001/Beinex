@@ -1,0 +1,59 @@
+.footer2{
+    background: #150D2B;
+    text-align: center;
+    a{
+        color: #FFF;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration: none;
+        text-transform: capitalize;
+    }
+    p{
+        opacity: 0.6;
+        color: #FFF;
+        font-size: 14px;
+        padding: 20px;
+    }
+    li{
+        display: inline;
+        
+    }
+    &__newul{
+        padding-top: 20px;
+        li{
+            padding-inline: 80px;
+        }
+    }
+    &__newul1{
+        padding-top: 20px;
+        li{
+            padding-inline: 40px;
+        }
+    }
+    
+}
+
+
+@include mobile{
+    .footer2{
+        &__newul{
+            padding-inline: 20px;
+        }
+        &__newul1{
+            padding-inline: 10px;
+        }
+    }
+}
+
+@include tablet{
+    .footer2{
+        &__newul{
+            padding-inline: 30px;
+        }
+        &__newul1{
+            padding-inline: 20px;
+        }
+    }
+}

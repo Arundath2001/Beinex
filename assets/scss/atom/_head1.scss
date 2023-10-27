@@ -1,0 +1,35 @@
+.head1{
+    color: #fff;
+    h2{
+        font-size: 28px;
+        font-weight: 600;
+        
+    }
+    p{
+        font-size: 14px;
+    }
+    &--title{
+        width: 400px;
+        h2{
+            font-size: 14px;
+            font-weight: normal;
+        }
+        p{
+            font-size: 28px;
+            font-weight: 600;
+        }
+    }
+    &--title2{
+        h2{
+            font-size: 18px;
+        }
+    }
+}
+
+@include mobile{
+    .head1{
+        &--title{
+            width: 100%;
+        }
+    }
+}

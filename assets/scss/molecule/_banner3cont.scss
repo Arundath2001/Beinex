@@ -1,0 +1,39 @@
+.banner3cont{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    padding: 41px;
+    background-color: #fff;
+    margin: 0px 45px;
+    position: absolute;
+    top: 370px;
+
+    p{
+        font-size: 14px;
+    }
+    &--new{
+        background-color: #e9e9e9;
+        position: absolute;
+        top: 0;
+        margin: 0px;
+    }
+}
+
+@include mobile{
+    .banner3cont{
+        flex-direction: column;
+        gap: 20px;
+        position: static;
+        padding: 0;
+    }
+}
+
+@include tablet{
+    .banner3cont{
+        flex-wrap: wrap;
+        columns: 2;
+        position: static;
+        padding: 0;
+
+    }
+}
